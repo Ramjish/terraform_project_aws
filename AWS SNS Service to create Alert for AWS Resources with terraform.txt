@@ -1,0 +1,13 @@
+AWS-Lab: configure AWS SNS Service to create Alert for AWS Resources with terraform 
+*************
+Steps:-
+*******
+1: Created the Terraform file for aws ec2 server creation
+2: Command: terraform init, terraform plan, terraform apply for aws ec2 server creation
+3: Go to aws console & configred SNS Service
+	- created SNS Topic & subscription --provide the details of mail or mobile or other protocol like HTTP or HTTPS
+	
+	
+4: Go to EC2 options and select the ec2 server
+5: Configred the cloudwatch service 
+	- Go to alarms options and select "In alarms" --create alarms -- select the "metric" --select the ec2 instance --select the metric name -"Average" --Period -5 minutes--select the " Greater than" --define any no. Like -75% cpu use case set --select the current SNS ---"create" 
