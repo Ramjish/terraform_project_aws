@@ -1,0 +1,17 @@
+AWS S3 bucket replication:-
+*******************************
+*******************************
+
+Steps:-
+
+1: Create Source & destination bucket.(Region should not match with source bucket and Versioning should be enabled)
+2: - Create Replication rule --> Define replication name.
+   - IAM Role: --> Create New Role.
+   - Define destination bucket name.
+   - Choose a rule scope: Take entire bucket for replication.
+   - Additional replication options:
+   - Replica Modification sync —> Enable
+
+3:  Check: Copy some files in source bucket and check in destination bucket.
+
+
