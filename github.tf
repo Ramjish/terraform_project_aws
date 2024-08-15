@@ -10,7 +10,7 @@ terraform {
 # Configure the GitHub Provider
 provider "github" {
 
-    token = "Personal access tokens"
+  token = "Personal access tokens"
 }
 
 resource "github_repository" "terraform_repo" {
@@ -19,8 +19,8 @@ resource "github_repository" "terraform_repo" {
 
   visibility = "public"
 
-  
-  }
+
+}
 
 
-  
+
